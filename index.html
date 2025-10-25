@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi primera pagina web</title>
 </head>
+
 <body>
     <header>
         <h1>Universidad Central del Ecuador</h1>
@@ -23,13 +25,14 @@
         <!--Textos-->
         <strong>Texto que quiero resalta</strong>
         <br>
-        <em>Texto en cursiva resaltado</em>
+        <em>Juegos de matematicas</em>
         <br>
         <i>Texto en cursiva</i>
         <br>
         <u>Texto subrayado</u>
         <br>
         <s>Texto eliminado</s>
+        <br>
         <mark>Texto resaltado</mark>
 
         <hr>
@@ -62,11 +65,85 @@
             <li>Cuarto</li>
             <li>Quinto</li>
         </ol>
+        <!--Tablas-->
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Cédula</th>
+                    <th>Acción</th>
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Leonardo</th>
+                    <th>Ramirez</th>
+                    <th>1723353825</th>
+                    <th><button>Editar</button></th>
+                </tr>
+                <tr>
+                    <th>Michael</th>
+                    <th>Barrionuevo</th>
+                    <th>1756823414</th>
+                    <th><button>Editar</button></th>
+                </tr>
+                <tr>
+                    <th>Byron</th>
+                    <th>Flores</th>
+                    <th>1757892341</th>
+                    <th><button>Editar</button></th>
+                </tr>
+                <tr>
+                    <th>Kevin</th>
+                    <th>Hurtado</th>
+                    <th>1778123645</th>
+                    <th><button>Editar</button></th>
+                </tr>
+
+            </tbody>
+        </table>
+        <!--Contenedores html-->
+        <div>
+            <button>Actualizar</button>
+            <button>Eliminar</button>
+            <button>Buscar</button>
+        </div>
+        <!-- header, body, nav, section-->
+        <!--Formularios-->
+        <form action="https://www.google.com">
+            <h1>Estudiante</h1>
+            <label for="id_nombre">Nombre: </label>
+            <input id="id_nombre" type="text">
+            <label for="id_email">Email: </label>
+            <input id="id_email" type="email">
+            <label for="id_fecha_nacimiento">Fecha de nacimiento: </label>
+            <input id="id_fecha_nacimiento" type="date">
+            <label for="id_password">Password</label>
+            <input id="id_password" type="password">
+            <button>Guardar</button>
+        </form>
+
+        <!--Multimedia-->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/800px-React-icon.svg.png" alt="No se pudo presentar la imagen" width="300" height="300">
+        <img src="./img/logo3.png" alt="No se pudo mostrar la imagen" width="300" height="300">
+        <video controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        </video>
+
+
 
 
     </section>
     <aside></aside>
-    <footer></footer>
-    
+    <footer>
+        Av. America entre la Gasca y Bolivia
+        <br>
+        Todos los derechos reservados
+
+    </footer>
+
 </body>
+
 </html>
