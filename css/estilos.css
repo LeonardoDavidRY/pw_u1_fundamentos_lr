@@ -1,0 +1,22 @@
+h1 {
+    color: red;
+    background-color: blue;
+    border: 1px solid black;
+    width: 600px;
+    height: 90px;
+}
+
+h2 {
+    color: #6CB86C;
+    background-color: #3E5FDE;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid red;
+}
+
+p {
+    background: greenyellow;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
