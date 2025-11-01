@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function cambiarColor(id_elemento, color){
+            document.getElementById(id_elemento).style.color = color;
+        }
+        function agregarElemento(id_elementoPadre, html){
+            document.getElementById(id_elementoPadre).innerHTML += html;
+        }
+        function construirH1(){
+            return '<h1 id="id_calculadora">Calculadora</h1>';
+        }
+        function eliminarElemento(id_elemento){
+            document.getElementById(id_elemento).remove();
+        }
+        function ocultarElemento(id_elemento){
+            document.getElementById(id_elemento).style.display = 'none';    
+        }
+        function mostrarElemento(id_elemento){
+            document.getElementById(id_elemento).style.display = 'block';    
+        }
+    </script>
+</head>
+<body>
+    <header></header>
+    <nav></nav>
+    <section>
+        <div id="id_div"></div>
+        <label id="id_label_1" for="id_n1">Número 1:</label>
+        <input type="number" id="id_n1">
+        <label id="id_label_2" for="id_n2">Número 2:</label>
+        <input type="number" id="id_n2">
+        <button onclick="cambiarColor('id_label_1', 'purple')">Cambiar 1</button>
+        <button onclick="cambiarColor('id_label_2', 'red')">Cambiar 2</button>
+
+        <button onclick="agregarElemento('id_div', construirH1())">Agregar </button>
+        <button onclick="eliminarElemento('id_label_1')">Eliminar</button>
+        <button onclick="ocultarElemento('id_label_2')">Ocultar</button>
+        <button onclick="mostrarElemento('id_label_2')">Mostrar</button>
+    </section>
+    <footer></footer>
+</body>
+</html>
