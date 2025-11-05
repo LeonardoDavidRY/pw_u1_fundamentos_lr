@@ -23,11 +23,12 @@ function evaluarOperacion(tipo){
     if(tipo == '+'){
         resultado = sumar(num1, num2);
     }else if(tipo == '-'){
+        resultado = restar(num1, num2);
         
     }else if(tipo == '*'){
-        
+        resultado = multiplicar(num1, num2);
     }else if(tipo == '/'){
-        
+        resultado = dividir(num1, num2);
     }
     document.getElementById('id_resultado').innerText = 'Resultado: ' + resultado;
 }
