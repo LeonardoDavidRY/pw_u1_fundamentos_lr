@@ -140,5 +140,103 @@ function fundamentosJS() {
         console.log(clave)
         console.log(profesor[clave]);
     }
+    const e1 = {
+        nombre: "Leonardo",
+        apellido: "Ramirez",
+        edad: 25,
+        ecuatoriano: true,
+        genero: "M",
+        ciudad: "Quito"
+    }
+    const e2 = {
+        nombre: "Michael",
+        apellido: "Barrionuevo",
+        edad: 24,
+        ecuatoriano: true,
+        genero: "M",
+        ciudad: "Quito"
+    }
+    const arregloEstudiantes = [e1, e2, {
+        nombre: "Byron",
+        apellido: "Flores",
+        edad: 24,
+        ecuatoriano: true,
+        genero: "M",
+        ciudad: "Quito"
+    }];
+    console.log(arregloEstudiantes[0]);
+    console.log(arregloEstudiantes[2]);
 
+
+    /*Desestructuración de arreglos */
+    const ar1 = [1, 2, 3, 4, 5, 6, 7];
+    const [p1, p2, p3, p4, p5] = ar1;
+    console.log(p1);
+    console.log(p5);
+
+    const [primero, , , , , , ultimo] = ar1;
+    console.log(primero);
+    console.log(ultimo);
+
+    const [pos1,pos2] = [1, 2, 3, 4, 5, 6, 7];
+
+    imprime(ar1);
+
+    //Desestructuración de objetos
+    const e3 = {
+        nombre1: "Santiago",
+        apellido1: "Ramirez",
+        edad: 24,
+        ecuatoriano: true,
+        genero: "M",
+        ciudad1: "Quito"
+    }
+    const { nombre1, ciudad1} = e3;
+    console.log(nombre1);
+    console.log(ciudad1);
+
+    const{nombre2:n, ciudad2:ciu} = {
+        nombre2: "Santiago",
+        apellido2: "Ramirez",
+        edad: 24,
+        ecuatoriano: true,
+        genero: "M",
+        ciudad2: "Quito"
+    }
+    console.log(n);
+    console.log(ciu);
+
+    const e4 = {
+        nombre: "Fatima",
+        apellido: "Fiallos",
+        edad: 24,
+        ecuatoriano: true,
+        genero: "F",
+        ciudad: "Quito",
+        direccion: {
+            calle: "Av. America",
+            barrio: "La Gasca",
+            numeracion:"2343-B"
+        }
+    }
+    console.log(e4.direccion);
+    console.log(e4.direccion.barrio);
+
+    const { edad:ed, direccion} = e4;
+    console.log(ed);
+    console.log(direccion);
+
+    const{ calle} = direccion;
+    console.log(calle);
+
+    const{ direccion:{barrio, calle:c1, numeracion}} =e4;
+    console.log(barrio);
+    console.log(c1);
+    console.log(numeracion);
+
+}
+function imprime([a,b,c]){
+    console.log(a);
+    console.log(b);
+    console.log(c);
 }
