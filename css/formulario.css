@@ -1,0 +1,53 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+}
+body {
+    background-color: #9ee2dc;
+
+}
+p:before {
+    content: attr(type);
+    display: block;
+    font-size: 20px;
+    color: rgb(19, 97, 52);
+    margin-top: 35px;
+    
+}
+input {
+    width: 250px;
+    border: none;
+    border-bottom: 2px solid rgb(70, 148, 105);
+    background: none;
+    color:rgb(103, 13, 248);
+}
+input:focus {
+    outline: none;
+    border-bottom: 3px solid rgb(2, 37, 18);
+}
+.formulario {
+    background-color: rgb(51, 241, 178);
+    border-radius: 10px;
+    padding: 30px 40px;
+    box-shadow: 10px 20px rgba(65, 58, 58, 0.2);
+
+}
+button{
+    background-color: rgb(9, 177, 126);
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+    margin-top: 20px;
+}
+.centrar_boton{
+    display: flex;
+    justify-content: center;
+}
+h2, 
+header{
+    color: rgb(70, 155, 212);
+    border-bottom: 2px solid rgb(8, 58, 43);
+    font-size: 35px;
+}
