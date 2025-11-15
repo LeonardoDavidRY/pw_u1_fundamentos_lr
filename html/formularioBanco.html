@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Details</title>
+    <link rel="stylesheet" href="../css/banco.css">
+    <script src="../js/banco.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <header></header>
+        <nav></nav>
+        <section class="page">
+            <div class="lado_imagen">
+                <div class="card-image">
+                    <img src="../img/targeta.png" alt="Imagen no encontrada">
+                </div>
+            </div>
+            <div class="formulario_derecho">
+                <div class="container">
+                    <form action="" onsubmit="return false;">
+                        <h2>Payment Details</h2>
+                        <p>
+                            Cardholder Name:
+                            <input id="id_cardholder_name" type="text" placeholder="Your name">
+                            <span id="id_error_cardholder_name" class="error_asterisco"></span>
+                        </p>
+                        <p>
+                            Card Number:
+                            <input id="id_card_number" type="text" inputmode="numeric" placeholder="0000 0000 0000 0000"
+                                pattern="[0-9\s]{13,19}" maxlength="19" aria-label="Card Number">
+                            <span id="id_error_card_number" class="error_asterisco"></span>
+                        </p>
+                        <div class="row">
+                            <div class="col">
+                                <p>Exp Date:
+                                    <input type="text" id="exp" placeholder="MM/YY" maxlength="5"
+                                        pattern="(0[1-9]|1[0-2])\/\d{2}" required>
+                                    <span id="id_error_expiration_date" class="error_asterisco"></span>
+                                </p>
+                            </div>
+                            <div class="col">
+                                <p>CVV:
+                                    <input id="id_cvv" type="text" placeholder="000" maxlength="4">
+                                    <span id="id_error_cvv" class="error_asterisco"></span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="centrar_boton">
+                            <button type="button" onclick="procesarPago()">Confirm</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer></footer>
+    </div>
+</body>
+
+</html>
